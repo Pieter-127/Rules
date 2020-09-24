@@ -1,0 +1,19 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+apply plugin: 'com.android.lint'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    compileOnly "com.android.tools.lint:lint-api:27.0.1"
+    compileOnly "com.android.tools.lint:lint-checks:27.0.1"
+    compileOnly("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10")
+
+
+}
+
+jar {
+    manifest {
+        attributes('Lint-Registry-v2': 'com.pieterventer.lint_checker.CustomIssueRegistry')
+    }
+}
