@@ -15,6 +15,7 @@ The app makes use of Kotlin and Lint to write a few custom lint rules, I only pl
 - Checking the length of methods
 - Checking if code contains certain literal values
 - Checking for outdated variable naming conventions
+
 ... and maybe a few more
 
 Lint rules can be found [here](https://github.com/Pieter-127/Rules/tree/master/lint_checker/src/main/java/com/pieterventer/lint_checker)
